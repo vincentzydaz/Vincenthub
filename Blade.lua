@@ -2362,7 +2362,7 @@ HomeTab.create_title({
 })
 
 HomeTab.create_title({
-	name = 'Argon Security',
+	name = 'Vincent Hub Security',
 	section = 'right'
 })
 
@@ -2372,7 +2372,7 @@ HomeTab.create_button({
 	callback = function()
         local req = (syn and syn.request) or (http and http.request) or http_request
         local opened = false
-        local JoinDiscord = "https://discord.gg/G2WgRW295J"
+        local JoinDiscord = "https://discord.gg/a8EM9Qvq"
 
         if req then
             local success, response = pcall(function()
@@ -2386,7 +2386,7 @@ HomeTab.create_button({
                     Body = game:GetService("HttpService"):JSONEncode({
                         cmd = 'INVITE_BROWSER',
                         nonce = game:GetService("HttpService"):GenerateGUID(false),
-                        args = {code = 'G2WgRW295J'}
+                        args = {code = 'a8EM9Qvq'}
                     })
                 })
             end)
@@ -2428,7 +2428,7 @@ HomeTab.create_button({
 })
 
 HomeTab.create_toggle({
-	name = 'Protection - Argon',
+	name = 'Protection - Vincent Hub',
 	flag = 'auto_update',
 
 	section = 'right',
