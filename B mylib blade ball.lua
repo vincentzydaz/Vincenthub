@@ -140,7 +140,7 @@ function Library.__init()
 	Shadow.Position = UDim2.new(0.508668244, 0, 0.5, 0)
 	Shadow.Size = UDim2.new(0, 776, 0, 509)
 	Shadow.ZIndex = 0
-	Shadow.Image = "rbxassetid://17290899982"
+	Shadow.Image = "rbxassetid://6476979432"
 	Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
 	local Container = Instance.new("Frame")
 	Container.Name = "Container"
@@ -165,7 +165,7 @@ function Library.__init()
 	Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Top.BorderSizePixel = 0
 	Top.Size = UDim2.new(0, 699, 0, 39)
-	Top.Image = "rbxassetid://17290652150"
+	Top.Image = "rbxassetid://6476979432"
 
 	local Logo = Instance.new("ImageLabel")
     	Logo.Name = "Logo"
@@ -462,7 +462,7 @@ function Library.__init()
     shadowMobile.Position = UDim2.new(0.5, 0, 0.5, 0)
     shadowMobile.Size = UDim2.new(0, 65, 0, 58)
     shadowMobile.ZIndex = 0
-    shadowMobile.Image = "rbxassetid://17183270335"
+    shadowMobile.Image = "rbxassetid://6476979432"
     shadowMobile.ImageTransparency = 0.200
     local Icon = Instance.new("ImageLabel")
     Icon.Name = "Icon"
@@ -474,7 +474,7 @@ function Library.__init()
     Icon.BorderSizePixel = 0
     Icon.Position = UDim2.new(0.5, 0, 0.5, 0)
     Icon.Size = UDim2.new(0, 30, 0, 30)
-    Icon.Image = "rbxassetid://134992015790041" --// [rbxassetid://secret]
+    Icon.Image = "rbxassetid://6476979432" --// [rbxassetid://secret]
 
     if deviceType == "PC" then
       mobile_button.Visible = false
@@ -699,7 +699,7 @@ end)
 		Logo.Position = UDim2.new(0.130999997, 0, 0.5, 0)
 		Logo.Size = UDim2.new(0, 17, 0, 17)
 		Logo.ZIndex = 3
-		Logo.Image = "rbxassetid://17290697757"
+		Logo.Image = "rbxassetid://6476979432"
 		Logo.ImageTransparency = 0.3001
 
 		local Glow = Instance.new("ImageLabel")
@@ -712,7 +712,7 @@ end)
 		Glow.BorderSizePixel = 0
 		Glow.Position = UDim2.new(0.5, 0, 0.5, 0)
 		Glow.Size = UDim2.new(0, 190, 0, 53)
-		Glow.Image = "rbxassetid://17290723539"
+		Glow.Image = "rbxassetid://6476979432"
 		Glow.ImageTransparency = 1.000
 
 		local Fill = Instance.new("Frame")
