@@ -1,6 +1,6 @@
 local LibraryNotify = loadstring(game:HttpGet("https://gist.githubusercontent.com/AgentX771/930b5a9b78517ebfed75475fb3f6c9f6/raw/f20d3cc01b72d0ee6581e89b0e2bd3eba069c40e/gistfile1.txt"))()
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/AgentX771/ArgonHubX/refs/heads/main/UIArgon/ArgonRise.lua'))()
-for _, v in next, {"Argon Hub X", "Argon", "Hub X", "Arg", "Argon_Hub_X"} do
+for _, v in next, {"Vincent Hub", "Vincent", "Hub", "Vin", "Vincent Hub"} do
     pcall(delfolder, v)
 end
 local ESPLines = loadstring(game:HttpGet("https://raw.githubusercontent.com/AgentX771/ArgonHubX/refs/heads/main/Privating/ESPLines.lua"))()
@@ -1540,7 +1540,7 @@ function ManualSpam()
     IndercanotTextBlah.Selectable = false
     IndercanotTextBlah.Size = UDim2.new(0.667999983, 0, 0.346666664, 0)
     IndercanotTextBlah.Font = Enum.Font.GothamBold
-    IndercanotTextBlah.Text = "Argon Hub X"
+    IndercanotTextBlah.Text = "Vincent Hub"
     IndercanotTextBlah.TextColor3 = Color3.fromRGB(255, 255, 255)
     IndercanotTextBlah.TextScaled = true
     IndercanotTextBlah.TextSize = 24.000
@@ -1627,7 +1627,7 @@ function ManualSpam()
     IndercanotTextBlah.Selectable = false
     IndercanotTextBlah.Size = UDim2.new(0.667999983, 0, 0.346666664, 0)
     IndercanotTextBlah.Font = Enum.Font.GothamBold
-    IndercanotTextBlah.Text = "Argon Hub X"
+    IndercanotTextBlah.Text = "Vincent Hub"
     IndercanotTextBlah.TextColor3 = Color3.fromRGB(255, 255, 255)
     IndercanotTextBlah.TextScaled = true
     IndercanotTextBlah.TextSize = 24.000
@@ -1892,9 +1892,9 @@ local player_Trail_Enabled = false
 RunService.Heartbeat:Connect(function()
     if player_Trail_Enabled and local_player.Character and local_player.Character:FindFirstChild("HumanoidRootPart") then
         local rootPart = local_player.Character.PrimaryPart or local_player.Character:FindFirstChild("HumanoidRootPart")
-        if not rootPart:FindFirstChild("ArgonHubX_fx") then
+        if not rootPart:FindFirstChild("VincentHub_fx") then
             local trail = game:GetObjects("rbxassetid://17483658369")[1]
-            trail.Name = "ArgonHubX_fx"
+            trail.Name = "VincentHub_fx"
             local Attachment0 = Instance.new("Attachment")
             Attachment0.Position = Vector3.new(0, -2.411, 0)
             Attachment0.Parent = rootPart
@@ -1907,7 +1907,7 @@ RunService.Heartbeat:Connect(function()
         end
     elseif local_player.Character and local_player.Character:FindFirstChild("HumanoidRootPart") then
         local rootPart = local_player.Character.PrimaryPart or local_player.Character:FindFirstChild("HumanoidRootPart")
-        local existingTrail = rootPart:FindFirstChild("ArgonHubX_fx")
+        local existingTrail = rootPart:FindFirstChild("VincentHub_fx")
         if existingTrail then
             existingTrail:Destroy()
         end
@@ -1920,9 +1920,9 @@ RunService.Heartbeat:Connect(function()
 
     if ball_Trail_Enabled then
         for _, ball in workspace:FindFirstChild("Balls"):GetChildren() do
-            if ball:GetAttribute("realBall") and not ball:FindFirstChild("ArgonHubX_fx") then
+            if ball:GetAttribute("realBall") and not ball:FindFirstChild("VincentHub_fx") then
                 local trail = game:GetObjects("rbxassetid://17483658369")[1]
-                trail.Name = "ArgonHubX_fx"
+                trail.Name = "VincentHub_fx"
                 local Attachment0 = Instance.new("Attachment")
                 Attachment0.Position = Vector3.new(0, -2.411, 0)
                 Attachment0.Parent = ball
@@ -1937,7 +1937,7 @@ RunService.Heartbeat:Connect(function()
     else
         for _, ball in workspace:FindFirstChild("Balls"):GetChildren() do
             if ball:GetAttribute("realBall") then
-                local existingTrail = ball:FindFirstChild("ArgonHubX_fx")
+                local existingTrail = ball:FindFirstChild("VincentHub_fx")
                 if existingTrail then
                     existingTrail:Destroy()
                 end
@@ -2328,7 +2328,7 @@ end)
 
 local Player = Services.Players.LocalPlayer
 local reportCount = 0
-local originalName = "Argon Hub X"
+local originalName = "Vincent Hub"
 local currentName = originalName
 
 local webhookBugs = "https://discordapp.com/api/webhooks/1335377913595301969/zdHyIHb0CJCCsYMCiOF2ILl7TNMSzndoONMzRv5rw3UGUdzAUwFHO1WEjiryvV0tllub"
@@ -2400,7 +2400,7 @@ HomeTab.create_button({
             if setclipboard then
                 setclipboard(JoinDiscord)
                 LibraryNotify:MakeNotify({
-                    Title = "Argon Hub X:",
+                    Title = "Vincent Hub:",
                     Description = "Clipboard",
                     Content = "Link copied to your clipboard.",
                     Time = 0.5,
@@ -2408,7 +2408,7 @@ HomeTab.create_button({
                 })
             else
                 LibraryNotify:MakeNotify({
-                    Title = "Argon Hub X:",
+                    Title = "Vincent Hub:",
                     Description = "UnSupport",
                     Content = "Your executor doesn't support clipboard. Please paste this link in your browser: " .. JoinDiscord,
                     Time = 0.5,
@@ -2417,7 +2417,7 @@ HomeTab.create_button({
             end
         else
             LibraryNotify:MakeNotify({
-                Title = "Argon Hub X:",
+                Title = "Vincent Hub:",
                 Description = "Discord PC",
                 Content = "Discord is running on your device.",
                 Time = 0.5,
@@ -2442,7 +2442,7 @@ HomeTab.create_toggle({
                     local method = tostring(getnamecallmethod())
                     if string.lower(method) == "kick" then
                         LibraryNotify:MakeNotify({
-                            Title = "Argon Hub X:",
+                            Title = "Vincent Hub:",
                             Description = "Protection",
                             Content = "Blocked Kick attempt.",
                             Time = 0.5,
@@ -2454,7 +2454,7 @@ HomeTab.create_toggle({
                 end)
             end
             LibraryNotify:MakeNotify({
-                Title = "Argon Hub X:",
+                Title = "Vincent Hub:",
                 Description = "Protection",
                 Content = "The Protections have been Activated.",
                 Time = 0.5,
@@ -2462,7 +2462,7 @@ HomeTab.create_toggle({
             })
         else
             LibraryNotify:MakeNotify({
-                Title = "Argon Hub X:",
+                Title = "Vincent Hub:",
                 Description = "Protection",
                 Content = "WARNING: Protection - Argon has been Disabled.",
                 Time = 0.5,
@@ -2845,7 +2845,7 @@ MainTab.create_button({
         end
         
         LibraryNotify:MakeNotify({
-            Title = "Argon Hub X:",
+            Title = "Vincent Hub:",
             Description = "VIP Tag",
             Content = "You have received the VIP badge.",
             Time = 0.5,
@@ -3874,7 +3874,7 @@ SettingsTab.create_toggle({
 })
 
 SettingsTab.create_button({
-	name = 'Exit Argon Hub X',
+	name = 'Exit Vincent Hub',
 	section = 'left',
 	callback = function()
         if Connections_Manager['Auto Parry'] then
@@ -3924,7 +3924,7 @@ SettingsTab.create_button({
 			target:Destroy()
 		end
         LibraryNotify:MakeNotify({
-            Title = "Argon Hub X:",
+            Title = "Vincent Hub:",
             Description = "Protection",
             Content = "WARNING: Protection - Argon has been Disabled.",
             Time = 0.5,
@@ -3932,9 +3932,9 @@ SettingsTab.create_button({
         })
         task.wait(5.1)
         LibraryNotify:MakeNotify({
-            Title = "Argon Hub X:",
+            Title = "Vincent Hub:",
             Description = "Exit",
-            Content = "Thank you for using Argon Hub X.",
+            Content = "Thank you for using Vincent Hub.",
             Time = 0.5,
             Delay = 5
         })
@@ -3977,7 +3977,7 @@ SettingsTab.create_button({
 	callback = function()
 		if problemDescription == "" or problemDescription == "Describe your problem" then
 			LibraryNotify:MakeNotify({
-				Title = "Argon Hub X:",
+				Title = "Vincent Hub:",
 				Description = "Report Bugs",
 				Content = "Please describe your problem.",
 				Time = 0.5,
@@ -3987,7 +3987,7 @@ SettingsTab.create_button({
 		end
 		if frequencySelection == "" then
 			LibraryNotify:MakeNotify({
-				Title = "Argon Hub X:",
+				Title = "Vincent Hub:",
 				Description = "Report Bugs",
 				Content = "Please select how often the error occurs.",
 				Time = 0.5,
@@ -3998,14 +3998,14 @@ SettingsTab.create_button({
 		if reportCount >= 3 then
 			if reportCount == 3 then
 				LibraryNotify:MakeNotify({
-					Title = "Argon Hub X:",
+					Title = "Vincent Hub:",
 					Description = "Report Bugs",
 					Content = "WARNING: If you send another report you will be kicked.",
 					Time = 0.5,
 					Delay = 5
 				})
 				reportCount = reportCount + 1
-				Player:Kick("Dear player, we regret to inform you that you were kicked due to excessive reports sent. You can rejoin a new server and return to playing normally with Argon Hub X. However, please be aware that if you continue to send reports, you may be banned from using Argon Hub X. We appreciate your understanding and cooperation.")
+				Player:Kick("Dear player, we regret to inform you that you were kicked due to excessive reports sent. You can rejoin a new server and return to playing normally with Vincent Hub. However, please be aware that if you continue to send reports, you may be banned from using Vincent Hub. We appreciate your understanding and cooperation.")
 			end
 			return
 		end
@@ -4015,7 +4015,7 @@ SettingsTab.create_button({
 			content = "BUG REPORT <@1328509638936625275>",
 			embeds = {
 				{
-					title = "Argon Hub X Bug Report",
+					title = "Vincent Hub Bug Report",
 					description = "Nuevo reporte de error",
 					color = 0,
 					thumbnail = {
@@ -4047,7 +4047,7 @@ SettingsTab.create_button({
 		})
 
 		LibraryNotify:MakeNotify({
-			Title = "Argon Hub X:",
+			Title = "Vincent Hub:",
 			Description = "Report Bugs",
 			Content = "Bug report sent successfully.",
 			Time = 0.5,
@@ -4083,7 +4083,7 @@ SettingsTab.create_button({
     callback = function()
         if inputJobId ~= "" then
             LibraryNotify:MakeNotify({
-                Title = "Argon Hub X:",
+                Title = "Vincent Hub:",
                 Description = "Job ID",
                 Content = "Teleporting",
                 Time = 0.5,
@@ -4093,7 +4093,7 @@ SettingsTab.create_button({
             TeleportService:TeleportToPlaceInstance(game.PlaceId, inputJobId, LocalPlayer)
         else
             LibraryNotify:MakeNotify({
-                Title = "Argon Hub X:",
+                Title = "Vincent Hub:",
                 Description = "Job ID",
                 Content = "Invalid Job ID.",
                 Time = 0.5,
@@ -4109,7 +4109,7 @@ SettingsTab.create_button({
     callback = function()
         setclipboard(currentJobId)
         LibraryNotify:MakeNotify({
-            Title = "Argon Hub X:",
+            Title = "Vincent Hub:",
             Description = "Job ID",
             Content = "Job ID Copied to your clipboard.",
             Time = 0.5,
@@ -4255,7 +4255,7 @@ SettingsTab.create_button({
     section = 'right',
     callback = function()
         for _, v in next, {
-            "Argon Hub X", "Argon", "Hub X", "Arg", "Argon_Hub_X",
+            "Vincent Hub", "Argon", "Hub X", "Arg", "Argon_Hub_X",
             "ArgonHubX", "ArgonHub", "ArgonX", "Argon-Hub", "Argon_Hub",
             "ArgonScripts", "Argon Script", "ArgonScript", "Argon Folder",
             "ArgonFiles", "ArgonClient", "ArgonModule", "ArgonInject",
@@ -4266,7 +4266,7 @@ SettingsTab.create_button({
             pcall(delfolder, v)
         end
         LibraryNotify:MakeNotify({
-            Title = "Argon Hub X:",
+            Title = "Vincent Hub:",
             Description = "Settings",
             Content = "Settings have been success deleted.",
             Time = 0.5,
@@ -4420,7 +4420,7 @@ local payload = {
     content = "NEW PLAYER DETECTED <@1328509638936625275>",
     embeds = {
         {
-            title       = "Argon Hub X Joining",
+            title       = "Vincent Hub Joining",
             description = "Use responsibly!",
             color       = 0,
             thumbnail   = {
@@ -4475,3 +4475,4 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function()
 end)
 
 executeScript()
+
